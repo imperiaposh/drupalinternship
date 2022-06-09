@@ -1,7 +1,10 @@
 <?php
+
 namespace Drupal\tuckos_test\Form;
+
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+
 class ExampleForm extends FormBase {
 /**
 * {@inheritdoc}
@@ -24,7 +27,7 @@ $form['user_surname'] = array (
     '#type' => 'textfield',
     '#title' => t('User Surname:'),
     '#required' => TRUE,
-  );
+);
 $form['user_mail'] = array (
   '#type' => 'textfield',
   '#title' => t('User Mail:'),
