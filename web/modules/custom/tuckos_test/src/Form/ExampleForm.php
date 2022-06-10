@@ -20,17 +20,17 @@ public function buildForm(array $form, FormStateInterface $form_state)
 {
 $form['user_name'] = array (
   '#type' => 'textfield',
-  '#title' => t('User Name:'),
+  '#title' => t('User Name and Surname:'),
   '#required' => TRUE,
-);
-$form['user_surname'] = array (
-    '#type' => 'textfield',
-    '#title' => t('User Surname:'),
-    '#required' => TRUE,
 );
 $form['user_mail'] = array (
   '#type' => 'textfield',
   '#title' => t('User Mail:'),
+  '#required' => TRUE,
+);
+$form['user_password'] = array (
+  '#type' => 'password',
+  '#title' => t('User Password:'),
   '#required' => TRUE,
 );
 $form['submit'] = array (
